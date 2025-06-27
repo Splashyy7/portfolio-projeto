@@ -5,6 +5,7 @@
 body, html {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  cursor: url('../assets/pointer-cursor.png'), auto;
 }
 
 .Main {
@@ -154,7 +155,7 @@ main {
 
 .logofont:hover {
   color: #090E12;
-  cursor:  default;
+  cursor: url('../assets/pointer-cursor.png'), auto;
 }
 
 .about-me {
@@ -288,4 +289,12 @@ main {
 .loader-screen.hide {
   opacity: 0;
   pointer-events: none;
+}
+
+a, button, .email-copy, .tech-list li {
+  cursor: url('../assets/click-cursor.png'), pointer !important;
+}
+
+a:hover, button:hover, .email-copy:hover, .tech-list li:hover {
+  cursor: url('../assets/click-cursor.png'), pointer !important;
 }
